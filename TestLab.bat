@@ -27,13 +27,12 @@ IF NOT EXIST hamcrest-core-1.3.jar (
 	GOTO Exit
 )
 
-
-FOR /F %%i IN ('DIR /B ^| FINDSTR TestL ^| FINDSTR .java') DO (
-	SET testEntry=%%~ni
-)
+SET testEntry=%~n1
 
 IF x%testEntry%==x (
-	SET testEntry=%~n1
+	FOR /F %%i IN ('DIR /B ^| FINDSTR /I /R /C:"^TestL[0-9][0-9]\.java$"') DO (
+		SET testEntry=%%~ni
+	)
 	IF x!testEntry!==x (
 		ECHO Test file seems to be missing.
 		ECHO Please check whether TestLxx.java is present under your lab folder.
