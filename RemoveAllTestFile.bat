@@ -1,1 +1,1 @@
-@del Test* *.class *.jar runtests %0
+@DEL Test* *.class *.jar runtests codepost %0
