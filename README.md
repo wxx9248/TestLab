@@ -5,13 +5,13 @@ Spring 2020 - ITI1121 - JUnit auxiliary script for Windows
 - A Windows machine
 - Correctly configured [JDK](https://www.oracle.com/ca-en/java/technologies/javase-downloads.html) environment
 - [JUnit4](https://search.maven.org/search?q=g:junit%20AND%20a:junit) and its [dependency](https://search.maven.org/artifact/org.hamcrest/hamcrest-core/1.3/jar)
-- Your lab or assigment folder
+- Your lab or assignment folder
 ![What your lab folder should look like](https://raw.githubusercontent.com/wxx9248/TestLab/master/assets/example.png)
 
 # How to Use
 - Place `TestLab.bat` under your lab folder or Place `TestAsg.bat` under your assignment folder
 - Double click and done ;)
-- Now you can use `RemoveAllTestFile.bat` to remove all your test files (including it self)
+- Now you can use `RemoveAllTestFile.bat` to remove all your test files (including itself)
 
 # FAQ: If Something Goes Wrong...
 
